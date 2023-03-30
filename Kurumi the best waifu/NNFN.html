@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .header{
+      width: 100%; 
+      background-color: cyan;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      
+    }
+    * {box-sizing: border-box}
+    
+    /* Set height of body and the document to 100% */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    /* Style tab links */
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+    
+    .tablink:hover {
+      background-color: #777;
+    }
+    
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+    .youtube{
+width: 1500px;
+height: 800px;
+margin: auto;
+justify-content: center;
+display: flex;
+}
+   
+    </style>
+<title>Tokisaki Kurumi </title>
+</head>
+<body>
+  <div class="header">
+    <h1 style="color: black;">My waifu joo~ Tokisaki Kurumi</h1>
+
+  </div>
+  <button class="tablink" onclick="openPage('Shashin & Bideo', this, 'red')">Shashin & Bideo</button>
+<button class="tablink" onclick="openPage('Eiga', this, 'green')" id="defaultOpen">Eiga</button>
+<button class="tablink" onclick="openPage('Uta', this, 'blue')">Uta</button>
+<button class="tablink" onclick="openPage('Kanojo no tsuite', this, 'orange')">Kanojo no tsuite</button>
+
+<div id="Shashin & Bideo" class="tabcontent">
+  <video width="1000" height="400" style="margin: 20px;" controls style="font-size: 50px;" class="youtube">
+    Kurumi best wife
+    <source src="Kurumi video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div>
+  </div>
+  <picture style="font-size: 50px ;"style="margin: 20px;">
+    Kurumi best waifu 
+    <source media="(min-width:400px)" srcset="Kurumi.JFIF">
+    <img src="Kurumi.jfif" style="width:auto;">
+  </picture>
+  <div>
+  </div>
+  <video width="1000" height="400" style="margin: 20px;" controls style="font-size: 50px;" class="youtube">
+    Kurumi best wife
+    <source src="Kurumi Vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div>
+  </div>
+  <picture  style="font-size: 50px ;"style="margin: 20px;">
+    Joo~ Kurumi
+    <source media="(min-width:50px)" srcset="Joo~ Kurumi.JFIF">
+    
+    <img src="Joo~ Kurumi.jfif" style="width:auto;" width="50px">
+    <br><br><br><br>
+      <hr>
+      <footer>
+        <address style="color: black;">
+          Saikyou Seirei.<br>
+          Tokisaki Kurumi.<br>
+          Tenshi: Zafkiel (刻々帝ザフキエル).<br>
+          No-ryoku: jikan seigyo.<br>
+          Website: https://vuighe.net/date-a-live-movie-mayuri-judgment/full<br>
+          </address>
+      </footer>
+</div>
+
+
+<div id="Eiga" class="tabcontent">
+  <iframe width="1500" height="800" src="https://vuighe.net/date-a-live-movie-mayuri-judgment/full">
+        </iframe>
+</div>
+
+<div id="Uta" class="tabcontent">
+  <iframe class="youtube" src="https://www.youtube.com/embed/Wv6QKWEeww4  ">
+  </iframe>
+</div>
+
+<div id="Kanojo no tsuite" class="tabcontent">
+ <h1 style="color: lightskyblue;">Watashi no ichiban kawaii yome desta.</h1>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+</body>
+</html>
